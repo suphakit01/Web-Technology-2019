@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lac3/1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <form action="" id="myForm" onsubmit="validateForm()" method="post" >
+                <p>
+                    <label for="myId">หมายเลขบัตรประชาชน : </label>
+                    <input type="text" name="myID" id="myID">
+                </p>
+
+                <p>
+                    <label for="preName">คำนำหน้า : </label>
+                    <br>
+                    <input type="radio" name="preName" id="preName">
+                    <label for="preName">นาย</label>
+                    <input type="radio" name="preName" id="preName">
+                    <label for="preName">นาง</label>
+                    <input type="radio" name="preName" id="preName">
+                    <label for="preName">นายสาว</label>
+                    <input type="radio" name="preName" id="preName">
+                    <label for="preName">เด็กชาย</label>
+                    <input type="radio" name="preName" id="preName">
+                    <label for="preName">เด็กหญิง</label>
+                </p>
+
+                <p>
+                    <label for="Name">ชื่อ : </label>
+                    <input type="text" name="Name" id="Name">
+
+                    <label for="LastName">นามสกุล : </label>
+                    <input type="text" name="LastName" id="LastName">
+                </p>
+
+                <p>
+                    <label for="Address1">ที่อยู่ 1 : </label>
+                    <input type="text" name="Address1" id="Address1">
+                    <br>
+
+                    <label for="Address2">ที่อยู่ 2 : </label>
+                    <input type="text" name="Address2" id="Address2">
+                    <br>
+
+                    <label for="SubDistrict">ตำบล/แขวง : </label>
+                    <input type="text" name="SubDistrict" id="SubDistrict">
+
+                    <label for="District">อำเภอ/เขต : </label>
+                    <input type="text" name="District" id="District">
+                    <br>
+                    
+                    <label for='Province'>จังหวัด :</label>
+                    <select id="Province"  name="Province">
+                        <option value="000" selected="selected">เลือกจังหวัดซะ!</option>
+                        <option value="001">กรุงเทพฯ</option>
+                        <option value="002">พะเยา</option>
+                        <option value="003">ภูเก็ต</option>
+                        <option value="004">เชียงใหม่</option>
+                        <option value="005">นครนายก</option>
+                        <option value="006">เลย</option>
+                        <option value="007">ขอนแก่น</option>
+                        <option value="008">น่าน</option>
+                        <option value="009">เชียงราย</option>
+                        <option value="010">สระบุรี</option>
+                    </select><br>
+
+                    <label for="Postcode">รหัสไปรษณีย์ : </label>
+                    <input type="text" name="Postcode" id="Postcode">
+                    <br>
+
+                    <label for="Tel">เบอร์โทรศัพท์ : </label>
+                    <input type="text" name="Tel" id="Tel">
+                </p>
+
+                <!-- <p>
+                    <input type="submit" name="submit" value="Submit" id="submit">
+                </p> -->
+            </form>
+
+            <button type="submit" name="submit" value="Submit">SUBMIT</button>
+
+        </div>
+    </div>
+
+    <script>
+        function validateForm(){
+            let jsID = document.forms["myForm"]["myID"].value;
+            if(isNaN(jsID)){
+	            alert(jsID + " is not a number <br/>");
+            }else{
+	            if(jsID.lenght != 13){
+                    alert(Id must be filld out);
+                }
+ }
+        }
+    
+    </script>
+
+</body>
+
+</html>
