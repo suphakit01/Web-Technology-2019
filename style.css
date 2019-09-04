@@ -18,6 +18,7 @@
     margin-top: 20vh;
     display: block;
     text-align: center;
+    /* margin-bottom: 40vh; */
 }
 
 footer{
@@ -25,8 +26,17 @@ footer{
     text-align: center;
     color: rgb(196, 196, 196);
     padding: 1em;
-    position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card{
+    justify-content: center;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
