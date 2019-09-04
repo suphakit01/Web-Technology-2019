@@ -1,0 +1,32 @@
+.navbar-brand{
+    color: rgb(114, 159, 170) !important;
+}
+
+.main-content{
+    display: block;
+    text-align: center;
+}
+
+.heading{
+    color: rgb(114, 159, 170);
+    font-family: 'Lobster', cursive;
+    font-size: 10vh;
+    font-size: 10vh;
+}
+
+.middle-center{
+    margin-top: 20vh;
+    display: block;
+    text-align: center;
+}
+
+footer{
+    font-size: 1.5vh;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    padding: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(219, 219, 219);
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20vh;
+    font-size: 5vh;
+    color: rgb(85, 85, 85);
+    text-shadow: 5px 5px 5px rgba(255, 182, 26, 0.1);
+}
+
+table{
+    margin: auto;
+}
+
+.bar{
+    background-color: rgb(235, 178, 72);
+    text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    display: block;
+    position: absolute;
+}
+
+.bar1{
+    width: 180px;
+    height: 30px;
+    margin: 10px;
+}
+
+.bar2{
+    width: 270px;
+    height: 30px;
+    margin: 10px;
+}
+
+.bar3{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}
+
+.bar4{
+    width: 240px;
+    height: 30px;
+    margin: 10px;
+}
+
+.bar5{
+    width: 225px;
+    height: 30px;
+    margin: 10px;
+}
+
+.barBG{
+    display: block;
+    z-index: -1000;
+    background-color: rgb(66, 66, 66);
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 0.5em rgb(0, 0, 0, 20%);
+}
