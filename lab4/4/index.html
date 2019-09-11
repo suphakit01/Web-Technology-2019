@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lab4/4</title>
+
+    <style>
+        html{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        div{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: 90px;
+            height: 90px;
+        }
+
+        body{
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-black {
+            background-color: rgb(53, 53, 53);
+        }
+
+        .box-white {
+            background-color: white;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <script>
+        for (let j = 0; j < 8; j++) {
+            for (let i = 0; i < 4; i++) {
+                let boxb = document.createElement("div");
+                let boxw = document.createElement("div");
+                boxb.classList.add("box-black");
+                boxw.classList.add("box-white");
+
+                if (j % 2 > 0) {
+                    document.body.appendChild(boxb);
+                    document.body.appendChild(boxw);
+                } else {
+                    document.body.appendChild(boxw);
+                    document.body.appendChild(boxb);
+                }
+            }
+            let nl = document.createElement("br");
+            document.body.appendChild(nl);
+        }
+    </script>
 </body>
+
 </html>
