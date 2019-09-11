@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lac3/1</title>
+    <title>lac3/2</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="myscript.js" type="text/javascript"></script>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
@@ -16,10 +18,10 @@
 <body>
     <div class="card">
         <div class="container">
-            <form action="" id="myForm" onsubmit="validateForm()" method="post" >
+            <form action="" id="myForm" onsubmit="validateForm()" method="post">
                 <p>
                     <label for="myId">หมายเลขบัตรประชาชน : </label>
-                    <input type="text" name="myID" id="myID" placeholder="เป็นตัวเลข จํานวน 13 หลัก">
+                    <input type="number" name="myID" id="myID" placeholder="เป็นตัวเลข จํานวน 13 หลัก">
                 </p>
 
                 <p>
@@ -76,7 +78,7 @@
                     </select><br><br>
 
                     <label for="Postcode">รหัสไปรษณีย์ : </label>
-                    <input type="text" name="Postcode" id="Postcode" placeholder="เป็นตัวเลข จํานวน 5 หลัก">
+                    <input type="number" name="Postcode" id="Postcode" placeholder="เป็นตัวเลข จํานวน 5 หลัก">
                     <br>
 
                     <label for="Tel">เบอร์โทรศัพท์ : </label>

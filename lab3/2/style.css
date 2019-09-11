@@ -19,10 +19,18 @@ input[type=text]{
     margin: .5em 0;
 }
 
+input[type=number]{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
+}
+
 .card{
     padding: 1em;
     background-color: #fff;
-    width: 40vw;
+    width: 50vw;
     margin: 3em auto;
     border-radius: 2em;
 }
@@ -57,6 +65,12 @@ button:hover {
 select{
     font-family: 'Kanit', sans-serif;
     color: rgb(85, 85, 85);
+    text-align: center;
+    width: 20%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
 }
 
 ::placeholder {

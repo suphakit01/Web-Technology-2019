@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3/6</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(224, 224, 224);
+        }
+
+        .graph {
+            width: 10vw;
+            height: 4vh;
+            background-color: cadetblue;
+            margin-top: 1vh;
+            border-radius: 0.2em 0.2em 0.2em 0.2em;
+            transition: .8s;
+        }
+
+        .text {
+            font-family: 'Kanit', sans-serif;
+            color: white;
+            padding-left: 1vh;
+            vertical-align: middle;
+        }
+
+        button {
+            font-family: 'Kanit', sans-serif;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            color: rgb(83, 83, 83);
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80px;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 211, 130);
+
+            transition: transform .2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            padding: 8vw;
+            background-color: #fff;
+            width: 35vw;
+            margin: 3em auto;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="chart">
+            <div class="text graph" id="graph01">Math</div>
+            <div class="text graph" id="graph02">Thai</div>
+            <div class="text graph" id="graph03">English</div>
+            <div class="text graph" id="graph04">Science</div>
+            <div class="text graph" id="graph05">Social</div>
+        </div>
+
+        <button type="VeiwChart" name="VeiwChart" value="VeiwChart" onclick="viewgraph()">Veiw Chart</button>
+    </div>
+
+    <script>
+        function viewgraph() {
+            document.getElementById("graph01").style.width = "15vw";
+            document.getElementById("graph02").style.width = "26vw";
+            document.getElementById("graph03").style.width = "14vw";
+            document.getElementById("graph04").style.width = "17vw";
+            document.getElementById("graph05").style.width = "35vw";
+        }
+
+    </script>
+
+</body>
+
+</html>

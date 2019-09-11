@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab4/2</title>
+</head>
+
+<body>
+
+    <label for="value1">Value 1:</label>
+    <input id="value1" type="number" name="value1">
+    <br><br>
+    <label for="value2">Value 2:</label>
+    <input id="value2" type="number" name="value2">
+    <br><br>
+    <button type="submit" oname="calculate" value="Submit" onclick="calculate()">Calculate</button>
+    <p>Result : <span id="result"></span></p>
+
+    <script>
+        function calculate() {
+            let val1 = document.getElementById("value1").value;
+            let val2 = document.getElementById("value2").value;
+            let cal;
+            cal = parseInt(val1) + parseInt(val2);
+            document.getElementById('result').innerHTML = cal;
+
+            //for create and add tag
+            let x = document.createElement("P");
+            let t = document.createTextNode(val1 + " + " + val2 + " = " + cal); x.appendChild(t);
+            document.body.appendChild(x);
+        }
+    </script>
+</body>
+
+</html>

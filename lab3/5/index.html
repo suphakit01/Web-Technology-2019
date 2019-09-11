@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lac3/5</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="myscript.js" type="text/javascript"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container w-50 card my-5">
+        <div class="header mt-5 text-center text-info">
+            <h1>แบบฟอร์มสมัครสมาชิก</h1>
+        </div>
+        <form action="" id="myForm" onsubmit="validateForm()" method="post">
+
+            <div class="form-group p-5">
+
+                <!-- หมายเลขบัตรประชาชน -->
+                <label for="myId">หมายเลขบัตรประชาชน</label>
+                <input class="form-control" type="number" name="myID" id="myID" placeholder="เป็นตัวเลข จํานวน 13 หลัก">
+                <br>
+
+                <!-- คำนำหน้า -->
+                <label for='preName'>คำนำหน้า</label>
+                <select class="form-control" id="Province" name="Province">
+                    <option value="001" selected="selected">นาย</option>
+                    <option value="002">นาง</option>
+                    <option value="003">นางสาว</option>
+                    <option value="004">เด็กชาย</option>
+                    <option value="005">เด็กหญิง</option>
+                </select>
+                <br>
+
+                <!-- ชื่อ -->
+                <label for="Name">ชื่อ</label>
+                <input class="form-control" type="text" name="Name" id="Name"
+                    placeholder="เป็นตัวอักษร ความยาวระหว่าง 2-20 ตัวอักษร">
+                    <br>
+
+                <!-- นามสกุล -->
+                <label for="LastName">นามสกุล</label>
+                <input class="form-control" type="text" name="LastName" id="LastName"
+                    placeholder="เป็นตัวอักษร ความยาวระหว่าง 2-30 ตัวอักษร">
+                    <br>
+
+                <!-- ที่อยู่ 1 -->
+                <label for="Address1">ที่อยู่ 1</label>
+                <input class="form-control" type="text" name="Address1" id="Address1"
+                    placeholder="ความยาวไม่ต่ํากว่า 5 ตัวอักษร">
+                    <br>
+
+                <!-- ที่อยู่ 2 -->
+                <label for="Address2">ที่อยู่ 2</label>
+                <input class="form-control" type="text" name="Address2" id="Address2"
+                    placeholder="ความยาวไม่ต่ํากว่า 5 ตัวอักษร">
+                    <br>
+
+                <!-- ตำบล/แขวง -->
+                <label for="SubDistrict">ตำบล/แขวง</label>
+                <input class="form-control" type="text" name="SubDistrict" id="SubDistrict"
+                    placeholder="เป็นตัวอักษร ความยาวไม่ต่ํากว่า 2 ตัวอักษร">
+                    <br>
+
+                <!-- อำเภอ/เขต -->
+                <label for="District">อำเภอ/เขต</label>
+                <input class="form-control" type="text" name="District" id="District" placeholder="เป็นตัวอักษร">
+                <br>
+
+                <!-- จังหวัด -->
+                <label for='Province'>จังหวัด</label><br>
+                <select class="form-control" id="Province" name="Province">
+                    <option value="006" selected="selected">กรุงเทพฯ</option>
+                    <option value="007">พะเยา</option>
+                    <option value="008">ภูเก็ต</option>
+                    <option value="009">เชียงใหม่</option>
+                    <option value="010">นครนายก</option>
+                    <option value="011">เลย</option>
+                    <option value="012">ขอนแก่น</option>
+                    <option value="013">น่าน</option>
+                    <option value="014">เชียงราย</option>
+                    <option value="015">สระบุรี</option>
+                </select>
+                <br>
+
+                <!-- รหัสไปรษณีย์ -->
+                <label for="Postcode">รหัสไปรษณีย์</label>
+                <input class="form-control" type="number" name="Postcode" id="Postcode"
+                    placeholder="เป็นตัวเลข จํานวน 5 หลัก">
+                    <br>
+
+                <!-- เบอร์โทรศัพท์ -->
+                <label for="Tel">เบอร์โทรศัพท์</label>
+                <input class="form-control" type="text" name="Tel" id="Tel" placeholder="เป็นตัวเลข จํานวน 9-10 หลัก">
+                <br>
+
+                <!-- SUBMIT -->
+                <button class="btn btn-primary" type="submit" name="submit" value="Submit">SUBMIT</button>
+                <br>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

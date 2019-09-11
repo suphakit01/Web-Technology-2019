@@ -21,17 +21,22 @@
     /* margin-bottom: 40vh; */
 }
 
-.footer-nav{
+/* .footer-nav{
     font-size: 1.5vh;
     text-align: center;
     color: rgb(196, 196, 196);
     padding: 1em;
-    bottom: 0;
     width: 100%;
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 0;
     left: 0;
+} */
+
+.blockquote-footer{
+    font-size: 1.5vh;
+    text-align: center;
+    color: rgb(196, 196, 196) !important;
+    /* content: none !important; */
 }
 
 .card{

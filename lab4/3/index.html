@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab4/3</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-family: 'Kanit', sans-serif;">ลงทะเบียนร่วมงาน</h2>
+
+    <input id="ids" name="ids" type="number" placeholder="รหัสนักศึกษา">
+    <input id="name" name="name" type="text" placeholder="ชื่อ">
+    <input id="lname" name="lname" type="text" placeholder="นามสกุล">
+    <button onclick="addtable()" type="submit" name="regist" value="Submit">ลงทะเบียน</button>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <table id="table0">
+        <tr>
+            <th> ลำดับที่ </th>
+            <th> รหัสนักศึกษา </th>
+            <th> ชื่อ </th>
+            <th> นามสกุล </th>
+        </tr>
+
+    </table>
+
+    <script>
+        var n = 1 ;
+        function addtable() {
+            let table = document.getElementById('table0');
+            let ids = document.getElementById("ids").value;
+            let name = document.getElementById("name").value;
+            let lname = document.getElementById("lname").value;
+
+            let row = table.insertRow(-1);
+            let cell, text;
+
+            for (let i = 0; i < 4; i++) {
+                cell = row.insertCell(-1);
+
+                if(i==0){
+                    cell.appendChild(document.createTextNode(n));
+                }
+                if(i==1){
+                    cell.appendChild(document.createTextNode(parseInt(ids)));
+                }
+                if(i==2){
+                    cell.appendChild(document.createTextNode(name));
+                }
+                if(i==3){
+                    cell.appendChild(document.createTextNode(lname));
+                }
+            }
+            n++;
+        }
+
+    </script>
+
+</body>
+
+</html>

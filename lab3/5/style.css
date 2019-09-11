@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: 'Kanit', sans-serif !important;
+    background-color: rgb(212, 212, 212) !important;
+    color: rgb(85, 85, 85);
+}
+/* 
+.container{
+    width: 80%;
+    margin: .5em auto;
+    margin-top: 3em;
+}
+
+input[type=text]{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
+}
+
+input[type=number]{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
+}
+
+.card{
+    padding: 1em;
+    background-color: #fff;
+    width: 50vw;
+    margin: 3em auto;
+    border-radius: 2em;
+}
+
+select{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    width: 20%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
+}
+*/
+
+::placeholder {
+    opacity: 0.5 !important;
+}
+
+button{
+    transition: transform .5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+   
