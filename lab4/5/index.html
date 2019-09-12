@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lab4/5</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(206, 108, 108);
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .card {
+            text-align: center;
+            padding: 8vw;
+            background-color: #fff;
+            width: 35vw;
+            margin: 3em auto;
+            border-radius: 2em;
+            box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.20.1);
+        }
+
+        button {
+            font-family: 'Kanit', sans-serif;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            color: rgb(83, 83, 83);
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(255, 211, 130);
+
+            transition: transform .2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="card">
+        <p id="text">Web Technology</p>
+        <button type="submit" name="font_p" onclick="Font_p()">Font[+]</button>
+        <button type="submit" name="font_m" onclick="Font_m()">Font[-]</button>
+        <button type="submit" name="color_p" onclick="color_p()">Color[+]</button>
+        <button type="submit" name="color_m" onclick="color_m()">Font[-]</button>
+    </div>
+
+    <script>
+        var z = 16;
+        var n = 0;
+
+        function Font_p() {
+            z += 4;
+            document.getElementById("text").style.fontSize = z + "px";
+        }
+        function Font_m() {
+            z -= 4;
+            document.getElementById("text").style.fontSize = z + "px";
+        }
+        function color_p() {
+            n++;
+            if (n > 4) {
+                n = 4;
+            }
+            // if(n%5 == 0){
+            //     n = 1;
+            // }
+            if (n == 0) {
+                document.getElementById("text").style.color = "#000";
+            }
+            if (n == 1) {
+                document.getElementById("text").style.color = "#7ECA67";
+            }
+            if (n == 2) {
+                document.getElementById("text").style.color = "#CF4646";
+            }
+            if (n == 3) {
+                document.getElementById("text").style.color = "#E8A038";
+            }
+            if (n == 4) {
+                document.getElementById("text").style.color = "#31D6CE";
+            }
+        }
+        function color_m() {
+            n--;
+            if (n < 0) {
+                n = 0;
+            }
+            // if(n%5 == 0){
+            //     n = 1;
+            // }
+            if (n == 0) {
+                document.getElementById("text").style.color = "#000";
+            }
+            if (n == 1) {
+                document.getElementById("text").style.color = "#7ECA67";
+            }
+            if (n == 2) {
+                document.getElementById("text").style.color = "#CF4646";
+            }
+            if (n == 3) {
+                document.getElementById("text").style.color = "#E8A038";
+            }
+            if (n == 4) {
+                document.getElementById("text").style.color = "#31D6CE";
+            }
+        }
+
+    </script>
+
 </body>
+
 </html>

@@ -6,18 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lab4/2</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(233, 179, 92);
+            font-family: 'Kanit', sans-serif;
+            color: rgb(59, 59, 59);
+        }
+
+        .card {
+            text-align: center;
+            padding: 8vw;
+            background-color: #fff;
+            width: 35vw;
+            margin: 3em auto;
+            border-radius: 2em;
+            box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.20.1);
+        }
+
+        button {
+            font-family: 'Kanit', sans-serif;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80px;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            background-color: rgb(78, 169, 255);
+
+            transition: transform .2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
 
-    <label for="value1">Value 1:</label>
-    <input id="value1" type="number" name="value1">
-    <br><br>
-    <label for="value2">Value 2:</label>
-    <input id="value2" type="number" name="value2">
-    <br><br>
-    <button type="submit" oname="calculate" value="Submit" onclick="calculate()">Calculate</button>
-    <p>Result : <span id="result"></span></p>
+    <div class="card" id="card">
+        <label for="value1">Value 1:</label>
+        <input id="value1" type="number" name="value1">
+        <br><br>
+        <label for="value2">Value 2:</label>
+        <input id="value2" type="number" name="value2">
+        <br><br>
+        <button type="submit" oname="calculate" value="Submit" onclick="calculate()">Calculate</button>
+        <p>Result : <span id="result"></span></p>
+    </div>
+
 
     <script>
         function calculate() {
@@ -30,7 +82,8 @@
             //for create and add tag
             let x = document.createElement("P");
             let t = document.createTextNode(val1 + " + " + val2 + " = " + cal); x.appendChild(t);
-            document.body.appendChild(x);
+            document.getElementById("card").appendChild(x);
+            // document.div.appendChild(x);
         }
     </script>
 </body>
