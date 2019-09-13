@@ -10,37 +10,72 @@
     <style>
         html {
             justify-content: center;
-            align-items: center;
             display: flex;
-        }
-
-        div {
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            width: 90px;
-            height: 90px;
+            align-items: center;
         }
 
         body {
+            padding: 40px;
             background-color: antiquewhite;
-            margin: 0;
+        }
+
+        div {
+            margin-top: -5px !important;
             padding: 0;
-            white-space: 0;
+            display: inline-block;
         }
 
         .box-black {
-            background-color: rgb(53, 53, 53);
+            width: 5em;
+            height: 5em;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
         }
 
         .box-white {
-            background-color: white;
+            width: 5em;
+            height: 5em;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
     <script>
+        // let line = 1;
+        // for (let i = 1; i <= 64; i++) {
+        //     if (line % 2 != 0) { // check odd number of Line
+        //         if (i % 2 != 0) { // check odd number of Box
+        //             let box = document.createElement("div");
+        //             box.classList.add("box-black");
+        //             document.body.append(box);
+        //         } else {
+        //             let box = document.createElement("div");
+        //             box.classList.add("box-white");
+        //             document.body.append(box);
+        //         }
+        //     } else { // check even number of Line
+        //         if (i % 2 == 0) { // check even number of Box
+        //             let box = document.createElement("div");
+        //             box.classList.add("box-black");
+        //             document.body.append(box);
+        //         } else {
+        //             let box = document.createElement("div");
+        //             box.classList.add("box-white");
+        //             document.body.append(box);
+        //         }
+
+        //     }
+        //     if (i % 8 == 0) {
+        //         let nline = document.createElement("br");
+        //         document.body.appendChild(nline);
+        //         line++;
+        //     }
+        // }
+
         for (let j = 0; j < 8; j++) {
             for (let i = 0; i < 4; i++) {
                 let boxb = document.createElement("div");
@@ -50,15 +85,15 @@
                 boxw.classList.add("box-white");
 
                 if (j % 2 > 0) {
-                    document.body.append(boxb);
-                    document.body.append(boxw);
+                    document.body.appendChild(boxb);
+                    document.body.appendChild(boxw);
                 } else {
-                    document.body.append(boxw);
-                    document.body.append(boxb);
+                    document.body.appendChild(boxw);
+                    document.body.appendChild(boxb);
                 }
             }
-            let nl = document.createElement("br");
-            document.body.append(nl);
+            let nline = document.createElement("br");
+            document.body.append(nline);
         }
     </script>
 </body>

@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lab4/6</title>
+
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        body {
+            background-color: rgb(126, 177, 113);
+            font-family: 'Kanit', sans-serif;
+            color: rgb(83, 83, 83);
+        }
+
+        .card {
+            text-align: center;
+            padding: 8vw;
+            background-color: #fff;
+            width: 50vw;
+            margin: 3em auto;
+            border-radius: 2em;
+            box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.20.1);
+        }
+
+        button {
+            font-family: 'Kanit', sans-serif;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            color: rgb(83, 83, 83);
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(255, 211, 130);
+
+            transition: transform .2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="card" id="card">
+        <h1>เพิ่มผลไม้</h1>
+        <button onclick="fn1()" id="banana" name="banana" type="submit">กล้วย</button>
+        <button onclick="fn2()" id="orange" name="orange" type="submit">ส้ม</button>
+        <button onclick="fn3()" id="waterm" name="waterm" type="submit">แตงโม</button>
+        <button onclick="fn4()" id="grape" name="grape" type="submit">องุ่น</button>
+        <hr>
+    </div>
+
+
+
+    <script>
+        var newline = 1;
+
+        function fn1() {
+            var image = document.createElement("img");
+            image.src = "../src/f1.png";
+            document.getElementById("card").appendChild(image);
+            if (newline % 5 == 0) {
+                let nline = document.createElement("br");
+                document.getElementById("card").appendChild(nline);
+            }
+            newline++;
+        }
+        function fn2() {
+            var image = document.createElement("img");
+            image.src = "../src/f2.png";
+            document.getElementById("card").appendChild(image);
+            if (newline % 5 == 0) {
+                let nline = document.createElement("br");
+                document.getElementById("card").appendChild(nline);
+            }
+            newline++;
+        }
+        function fn3() {
+            var image = document.createElement("img");
+            image.src = "../src/f3.png";
+            document.getElementById("card").appendChild(image);
+            if (newline % 5 == 0) {
+                let nline = document.createElement("br");
+                document.getElementById("card").appendChild(nline);
+            }
+            newline++;
+        }
+        function fn4() {
+            var image = document.createElement("img");
+            image.src = "../src/f4.png";
+            document.getElementById("card").appendChild(image);
+            if (newline % 5 == 0) {
+                let nline = document.createElement("br");
+                document.getElementById("card").appendChild(nline);
+            }
+            newline++;
+        }
+
+    </script>
+
 </body>
+
 </html>
