@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE employee [
+<!ELEMENT note (id,title,lastname,firstname,jobtitle,address)><!ELEMENT to (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT jobtitle (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+]>

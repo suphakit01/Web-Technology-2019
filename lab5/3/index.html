@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab5/3</title>
+</head>
+
+<body>
+    <script>
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                xmlShow(this);
+            }
+        };
+        xhttp.open("GET", "employee.xml", true);
+        xhttp.send();
+
+        function xmlShow(xml) {
+            let xmlDoc = xml.responseXML;
+
+            //new element
+            let edt = xmlDoc.getElementsByTagName("person");
+            let xLen = edt.length;
+            for (let i = 0; i < xLen; i++) {
+                let newEle = xmlDoc.createElement("country");  //create Element name "country"
+                let t1 = xmlDoc.createTextNode("USA");
+                let t2 = xmlDoc.createTextNode("TH");
+                let t3 = xmlDoc.createTextNode("AUS");
+
+                if (i % 2 == 0) {
+                    newEle.appendChild(t1);
+                    edt[i].appendChild(newEle);
+                }
+                else if (i % 3 == 0) {
+                    newEle.appendChild(t2);
+                    edt[i].appendChild(newEle);
+                } else {
+                    newEle.appendChild(t3);
+                    edt[i].appendChild(newEle);
+                }
+            }
+
+            let txt = "";
+            let id = xmlDoc.getElementsByTagName("id");
+            let t = xmlDoc.getElementsByTagName("title");
+            let l = xmlDoc.getElementsByTagName("lastname");
+            let f = xmlDoc.getElementsByTagName("firstname");
+            let j = xmlDoc.getElementsByTagName("jobtitle");
+            let a = xmlDoc.getElementsByTagName("address");
+            let c = xmlDoc.getElementsByTagName("country");
+
+            for (let i = 0; i < t.length; i++) { //x.length find many of "title" in book.xml
+                txt += id[i].childNodes[0].nodeValue + " "
+                    + t[i].childNodes[0].nodeValue + " "
+                    + l[i].childNodes[0].nodeValue + " "
+                    + f[i].childNodes[0].nodeValue + " ( "
+                    + j[i].childNodes[0].nodeValue + " ), "
+                    + a[i].childNodes[0].nodeValue + ", "
+                    + c[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.write(txt);
+
+        }
+    </script>
+
+</body>
+
+</html>
