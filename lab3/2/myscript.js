@@ -9,6 +9,10 @@ function validateForm() {
 
     /*ชื่อ*/
     let Name = document.forms["myForm"]["Name"].value;
+    if (!isNaN(Name)) {
+        alert("ต้องกรอกเป็นตัวอักษรเท่านั้นจ้า!");
+        return false;
+    }
     if ((Name.length < 2) || (Name.length > 20)) {
         alert("กรอกชื่อ ผิดจ้า!! กรอกใหม่สิจ๊ะ");
         return false;
@@ -16,6 +20,10 @@ function validateForm() {
 
     /*นามสกุล*/
     let LastName = document.forms["myForm"]["LastName"].value;
+    if (!isNaN(LastName)) {
+        alert("ต้องกรอกเป็นตัวอักษรเท่านั้นจ้า!");
+        return false;
+    }
     if ((LastName.length < 2) || (LastName.length > 30)) {
         alert("กรอกนามสกุล ผิดจ้า!! กรอกใหม่สิจ๊ะ");
         return false;
