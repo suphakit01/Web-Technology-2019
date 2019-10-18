@@ -1,0 +1,30 @@
+[
+    {
+        "display": "Web Technology",
+        "url": "https://www.it.kmitl.ac.th/wt/"
+    },
+    {
+        "display": "Object Oriented Programming",
+        "url": "https://www.it.kmitl.ac.th/oop/"
+    },
+    {
+        "display": "Database System",
+        "url": "https://www.it.kmitl.ac.th/dbs/"
+    },
+    {
+        "display": "Management Information System",
+        "url": "https://www.it.kmitl.ac.th/mis/"
+    },
+    {
+        "display": "Information Systems Analysis and Design",
+        "url": "https://www.it.kmitl.ac.th/isad/"
+    },
+    {
+        "display": "Web Programming",
+        "url": "https://www.it.kmitl.ac.th/webpro/"
+    },
+    {
+        "display": "Data Structure and Algorithms",
+        "url": "https://www.it.kmitl.ac.th/dsa/"
+    }
+]

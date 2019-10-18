@@ -1,0 +1,67 @@
+{
+    "id": [
+        {
+            "gender": "Female",
+            "lastname": "Davolio",
+            "firstname": "Nancy",
+            "position": "Sales Representative",
+            "address": "507 - 20th Ave. E. Apt. 2A"
+        },
+        {
+            "gender": "Male",
+            "lastname": "Fuller",
+            "firstname": "Andrew",
+            "position": "Vice President, Sales",
+            "address": "908 W. Capital Way"
+        },
+        {
+            "gender": "Female",
+            "lastname": "Leverling",
+            "firstname": "Janet",
+            "position": "Sales Representative",
+            "address": "722 Moss Bay Blvd."
+        },
+        {
+            "gender": "Female",
+            "lastname": "Peacock",
+            "firstname": "Margaret",
+            "position": "Sales Representative",
+            "address": "4110 Old Redmond Rd."
+        },
+        {
+            "gender": "Male",
+            "lastname": "Buchanan",
+            "firstname": "Steven",
+            "position": "Sales Manager",
+            "address": "14 Garrett Hill"
+        },
+        {
+            "gender": "Male",
+            "lastname": "Suyama",
+            "firstname": "Michael",
+            "position": "Sales Representative",
+            "address": "Coventry House Miner Rd."
+        },
+        {
+            "gender": "Male",
+            "lastname": "King",
+            "firstname": "Robert",
+            "position": "Sales Representative",
+            "address": "Edgeham Hollow Winchester Way"
+        },
+        {
+            "gender": "Female",
+            "lastname": "Callahan",
+            "firstname": "Laura",
+            "position": "Inside Sales Coordinator",
+            "address": "4726 - 11th Ave. N.E."
+        },
+        {
+            "gender": "Female",
+            "lastname": "Dodsworth",
+            "firstname": "Anne",
+            "position": "Sales Representative",
+            "address": "7 Houndstooth Rd."
+        }
+    ]
+}

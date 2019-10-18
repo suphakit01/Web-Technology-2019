@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(231, 125, 125);
+    color: rgb(85, 85, 85);
+}
+
+.container{
+    width: 80%;
+    margin: .5em auto;
+    margin-top: 3em;
+}
+
+input[type=text]{
+    width: 96%;
+    border-radius: 6px;
+    border: 1px solid rgba(202, 202, 202, 0.281);
+    padding: 1em;
+    margin: .5em 0;
+}
+
+.card{
+    padding: 5em;
+    background-color: #fff;
+    width: 40vw;
+    margin: 3em auto;
+    border-radius: 2em;
+}
+
+.button{
+    box-shadow: 5px 5px 5px rgb(27, 27, 27, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    color: rgb(83, 83, 83);
+    opacity: 1 !important;
+}
+
+.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px; 
+    background-color: rgb(255, 211, 130);
+
+    transition: transform .2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+select{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+input, select, textarea {
+    opacity: 0.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td{
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.num{
+    text-align: left;
+}
+
+th{
+    text-align: left;
+    padding: 8px;
+    width: 8vh;
+
+}

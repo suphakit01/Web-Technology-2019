@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab6/1</title>
+</head>
+
+<body>
+
+    <script>
+        let requestURL = 'person.json';
+        let request = new XMLHttpRequest(); request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) { //404 --> error
+                var myJSON = JSON.parse(request.responseText);
+                myFunction(myJSON);
+            }
+        };
+
+        request.open("GET", requestURL, true); request.send(); //request.open("GET", 'person.json', true); request.send();
+        function myFunction(myObj) {
+            for (let i = 0; i < myObj.id.length; i++) {
+                document.write(i + 1 + " "
+                    + "<b>" + myObj.id[i].firstname + " "
+                    + myObj.id[i].lastname + "</b>" + " ("
+                    + myObj.id[i].gender + ") is a "
+                    + myObj.id[i].position + ", "
+                    + myObj.id[i].address + "<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
