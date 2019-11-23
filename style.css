@@ -1,17 +1,17 @@
-body{
+body {
     padding-bottom: 10vh;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: rgb(114, 159, 170) !important;
 }
 
-.main-content{
+.main-content {
     display: block;
     text-align: center;
 }
 
-.heading{
+.heading {
     color: rgb(114, 159, 170);
     font-family: 'Lobster', cursive;
     font-size: 10vh;
@@ -19,20 +19,20 @@ body{
     margin-bottom: 0;
 }
 
-.sub-heading{
+.sub-heading {
     font-family: 'Rubik', sans-serif;
     color: rgb(211, 211, 211);
     font-size: 1vh;
 }
 
-.middle-center{
+.middle-center {
     margin-top: 20vh;
     display: block;
     text-align: center;
     /* margin-bottom: 40vh; */
 }
 
-.footer-nav{
+.footer-nav {
     font-size: 1.5vh;
     text-align: center;
     color: rgb(196, 196, 196);
@@ -45,9 +45,10 @@ body{
     bottom: 0;
 }
 
-.card-footer:last-child{
+.card-footer:last-child {
     background-color: white;
 }
+
 
 /* .blockquote-footer{
     font-size: 1.5vh !important;
@@ -57,19 +58,26 @@ body{
     bottom: 0 !important;
 } */
 
-.blockquote-footer::before{
+.blockquote-footer::before {
     content: "" !important;
 }
 
 .card-footer {
     padding: .75rem 1.25rem;
-    background-color: rgba(0,0,0,.03);
-    border-top: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0, 0, 0, .03);
+    border-top: 1px solid rgba(0, 0, 0, .125);
 }
 
-.card{
+.card {
     justify-content: center;
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+
+.title_txt {
+    font-family: 'Pacifico', cursive;
+    margin-top: 100px;
+    text-align: center;
+    color: #666666;
 }

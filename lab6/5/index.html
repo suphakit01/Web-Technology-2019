@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab 6/4 - WebTechnology 2019</title>
+</head>
+
+<body>
+    <script>
+        let requestURL = "movies.json";
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                var myArr = JSON.parse(request.responseText);
+                myFunction(myArr);
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        
+        function myFunction(myObj) {
+            for (let i = 0; i < myObj.length; i++) {
+               document.write("<b>" + parseInt(i+1) + ". " + myObj[i].title + "</b> (" + myObj[i].year + ")<br>");
+               document.write("<b>Cast: </b>");
+               
+               for(let j = 0; j < myObj[i].cast.length; j++){
+                   document.write("- " + myObj[i].cast[j] + '<br>');
+               }
+
+               document.write("<b>Genres : </b>");
+
+               for(let k = 0; k < myObj[i].genres.length; k++){
+                    document.write(myObj[i].genres[k]);
+                    if(k < myObj[i].genres.length-1){
+                        document.write(", ");
+                    }
+               }
+
+               document.write('<br><br>');
+            }
+        }
+    </script>
+</body>
+
+</html>
